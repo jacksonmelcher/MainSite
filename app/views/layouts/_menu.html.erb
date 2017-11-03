@@ -10,10 +10,13 @@
   <section id="banner">
     <div class="wrapper">
       <header>
-        <p <a name="home" id="logo">UNR<span>ACM</span></p>
+        <%= link_to root_path(), name: "home", id: "logo" do %>
+          <p>
+            UNR <span>ACM
+          </p>
+        <% end %>
 
         <nav>
-          <a href="#">Home</a>
           <a href="#officers">Officers</a>
           <a href="#sponsors">Sponsors</a>
           <a href="#events" class="button button_secondary button_small">Events</a>
@@ -22,3 +25,4 @@
       </header>
     </div>
   </section>
+<%= yield %>

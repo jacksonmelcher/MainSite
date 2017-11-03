@@ -14,9 +14,8 @@
     <%= flash_messages %>
     <% unless user_signed_in? %>
       <%= render 'layouts/menu' %>
-      <%= yield %>
     <% else %>
-      <%= render 'layouts/signed_in' %>
+      <%= render 'layouts/signed_in_menu' %>
     <% end %>
   </body>
 </html>
