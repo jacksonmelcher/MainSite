@@ -12,6 +12,8 @@
       <p <a name="home" id="logo">UNR<span>ACM</span></p>
 
       <nav>
+        <%= link_to "Mentors", users_path() %>
+        <%= link_to "Profile", edit_user_registration_path() %>
         <%= link_to "Sign Out", destroy_user_session_path(), method: :delete %>
       </nav>
     </header>
